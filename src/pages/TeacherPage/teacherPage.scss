@@ -1,0 +1,44 @@
+@import "./../../styles/vars.scss";
+
+.teacherPage {
+    margin-top: 35px;
+}
+
+.teacherPage__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.teacherPage__title {
+    margin: 0 auto;
+}
+
+.teacherPage__info {
+    width: 100%;
+ 
+    .teacherPage__table {
+        width: 100%;
+        border: 1px solid $lite-border;
+        border-collapse: collapse;
+        box-shadow: $lite-shadow;
+
+        & td, & th {
+            padding: 7px;
+            border: 1px solid $lite-border;
+        }    
+
+        & th {
+            background-color: $green-bg;
+        }
+    }
+
+    @include media550Mixin {
+        font-size: 13px;
+    }
+
+    @include media450Mixin {
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,47 @@
+@import './vars.scss';
+
+.seeUsers__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.seeUsers__title {
+    margin: 0 auto;
+}
+
+.seeUsers__content {
+
+    .seeUsers__content-title {
+        padding: 10px;
+        cursor: pointer;
+        background-color: rgba(0, 128, 0, 0.459);
+        box-shadow: $green-shadow;
+        font-weight: 600;
+        font-size: 18px;
+
+        @include media650Mixin {
+            font-size: 15px;
+        }
+    }
+
+    .seeUsers__content-table {
+        width: 100%;
+        border: 1px solid $lite-border;
+        border-collapse: collapse;
+        box-shadow: $lite-shadow;
+
+        & td, & th {
+            padding: 7px;
+            border: 1px solid $lite-border;
+
+            @include media650Mixin {    
+                font-size: 12px;
+            }
+        }    
+
+        & i {
+            cursor: pointer;
+        }
+    }
+}

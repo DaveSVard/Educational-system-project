@@ -1,0 +1,40 @@
+// colors 
+
+$blue-text:#05386B;
+$lite-border:rgba(128, 128, 128, 0.63);
+$lite-shadow:1px 1px 3px $lite-border;
+$green-bg:rgba(0, 128, 0, 0.459);
+$green-shadow:1px 1px 3px $green-bg;
+
+//media 
+
+$media850: 850px;
+$media650: 650px;
+$media550: 550px;
+$media450: 450px;
+
+//mixins
+
+@mixin media850Mixin {
+    @media screen and (max-width: $media850) {
+        @content;
+    }
+}
+
+@mixin media650Mixin {
+    @media screen and (max-width: $media650) {
+        @content;
+    }
+}
+
+@mixin media450Mixin {
+    @media screen and (max-width: $media450) {
+        @content;
+    }
+}
+
+@mixin media550Mixin {
+    @media screen and (max-width: $media550) {
+        @content;
+    }
+}

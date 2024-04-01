@@ -1,0 +1,142 @@
+@import "./../styles/vars.scss";
+
+.subject {
+    margin-top: 35px;
+}
+
+.subject__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.subject__title {
+    margin: 0 auto;
+}
+
+.subject__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;   
+}
+
+
+.subject__items-item {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    
+    background-color: $green-bg;
+    box-shadow: $green-shadow;
+    border-radius: 3px;
+    
+    .subject__items-item__wrapper {
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include media650Mixin {
+            width: 250px;
+        }
+    }
+
+    .subject__items-item__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+
+        & > a {
+            color: black;
+            text-decoration: underline;
+        } 
+    }
+
+    .subject__items-item__btns {
+        display: flex;
+        column-gap: 10px;
+    }
+}
+
+.subject__form-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.subject__item-upgrade {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 5px;
+
+
+    padding: 7px;
+    background-color: #EDF5E1;
+    border-radius: 5px;
+
+    & > div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        
+        & > input {
+            width: 100%;
+            border-bottom: 1px solid $lite-border;     
+            border-radius: 3px;       
+        }
+    }
+
+}
+
+.subject__item-upgrade--second {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+
+
+    padding: 7px;
+    background-color: #EDF5E1;
+    border-radius: 5px;
+
+
+    & > div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+
+        & > input {
+            width: 100%;
+            border: 1px solid $lite-border;            
+            text-align: center;    
+            border-radius: 3px;       
+        }
+
+        & > select {
+            width: 100%;
+            text-align: center;    
+            border: 1px solid $lite-border;
+            border-radius: 3px;       
+        }
+
+    }
+    
+    & > button {
+        width: 100% !important;
+    }
+}

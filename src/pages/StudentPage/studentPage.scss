@@ -1,0 +1,104 @@
+@import "./../../styles/vars.scss";
+
+.studentPage {
+    margin-top: 35px;
+}
+
+.studentPage__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+}
+
+.studentPage__title {
+    margin: 0 auto;
+}
+
+.studentPage__select {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;    
+
+    padding: 5px;
+    border-radius: 5px;
+
+    & select {
+        width: 100%;
+        padding: 7px;
+        border: 1px solid black;
+        border-radius: 3px;
+        text-align: center;
+    }
+}
+
+.studentPage__table {
+    border: 1px solid $lite-border;
+        border-collapse: collapse;
+        box-shadow: $lite-shadow;
+
+    & td, & th {
+        padding: 7px;
+        border: 1px solid $lite-border;
+
+        @include media550Mixin {
+            padding: 5px;
+        }
+
+        @include media450Mixin {
+            padding: 3px;
+        }
+    }    
+
+    & th {
+        background-color: $green-bg;
+    }
+
+    @include media550Mixin {
+        font-size: 13px;
+    }
+
+    @include media450Mixin {
+        font-size: 11px;
+    }
+}
+
+.studentPage__info {
+    width: 250px !important;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    
+    background-color: $green-bg;
+    border-radius: 5px;
+
+    .studentPage__info-content {
+        width: 100%;
+
+        & > div {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.homework__info {
+    width: clamp(280px, 50vw, 450px);
+    background-color: $green-bg;
+    border-radius: 5px;
+
+
+    .homework__info-content {
+        padding: 7px;
+    }
+}

@@ -1,0 +1,91 @@
+@import "./../../styles/vars.scss";
+
+.settings {
+    margin-top: 35px;
+}
+
+.settings__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 35px;
+}
+
+.settings__title {
+    margin: 0 auto;
+}
+
+
+.settings__content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 25px;
+
+
+    .userInfo {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: $green-bg;
+
+        @include media450Mixin {
+            width: 280px;
+        }
+
+        & img {
+            width: 170px;
+            height: 120px;
+            border-radius: 7px;
+        }
+    }
+
+    .settings__forms {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
+
+
+.settings__changeData {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    
+    padding: 15px;
+    border-radius: 10px;
+    background-color: $green-bg;
+    
+    .settings__changeData-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 5px;
+
+        & input {
+            width: 100%;
+            padding: 7px;
+            border: 1px solid black;
+            border-radius: 5px;
+            text-align: center;
+        }
+    }
+
+    @include media450Mixin {
+        width: 280px;
+    }
+}

@@ -1,0 +1,143 @@
+@import "./../../../styles/vars.scss";
+
+.homeworks__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+}
+
+.homeworks__selects {
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    row-gap: 10px;
+
+    @include media650Mixin {
+        flex-direction: column;
+    }
+}
+
+.homeworks__selects-item {
+    & select {
+        padding: 7px;
+        border: 1px solid black;
+        border-radius: 3px;
+        text-align: center;
+    }
+}
+
+.homeworks__choose-btns {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    row-gap: 10px;
+
+    @include media450Mixin {
+        flex-direction: column;
+    }
+}
+
+.homework__seeHomeworks {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+
+    .homework__seeHomeworks-select {
+        padding: 7px;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+}
+
+.seeSingle-homework {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 15px;
+
+    padding: 15px;
+    background-color: $green-bg;
+    box-shadow: $green-shadow;
+    border-radius: 7px;
+}
+
+.seeSingle-homework__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.seeGrades-table {
+    border: 1px solid $lite-border;
+        border-collapse: collapse;
+        box-shadow: $lite-shadow;
+
+    & td, & th {
+        padding: 7px;
+        border: 1px solid $lite-border;
+
+        @include media550Mixin {
+            padding: 5px;
+        }
+
+        @include media450Mixin {
+            padding: 3px;
+        }
+    }    
+
+    & th {
+        background-color: $green-bg;
+    }
+
+    @include media550Mixin {
+        font-size: 13px;
+    }
+
+    @include media450Mixin {
+        font-size: 11px;
+    }
+}
+
+.grade__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+     
+    & select {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+
+        resize: none;
+        border: 1px solid $lite-border;
+        border-radius: 7px;
+    }
+}
+
+.deleteGradeMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+
+    & h2 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .deleteGradeBtns {
+        display: flex;
+        column-gap: 10px;
+    }
+}
